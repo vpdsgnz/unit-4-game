@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+
+<title>Crystal Collector</title>
+
+<!-- Bootstrap & jQuery -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- Font Link -->
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-6 back">
+                <h1>Crystal Collector</h1>
+                <p>You will be given a random number at the start of the game.<br><br>
+                There are four crystals below. By clicking on a crystal you will add a specific
+                amount of points to your total score.<br><br>
+                You win the game by matching your total score to the random number. You lose 
+                if your score total is more than the random number.<br><br>
+                The value of each crystal is hidden from you, so click on it to figure it out.<br><br>
+                Each time when the game starts, you will be given a new random number and 
+                the values of each crystal will change.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-3 back">
+                <p>Random Number</p>
+                <h2 id="target"></h2>
+            </div>
+            <div class="col-2 ml-4 back">
+                <p>Wins: <span id="wins"></span></p><br>
+                <p>Losses: <span id="losses"></span></p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <img src="assets/images/gem1.png" class="crystal" id="c1">
+            <img src="assets/images/gem2.png" class="crystal" id="c2">
+            <img src="assets/images/gem3.png" class="crystal" id="c3">
+            <img src="assets/images/gem4.png" class="crystal" id="c4">
+        </div>
+        <div class="row mt-4">
+            <div class="col-3 back">
+                <p>Your total score:</p>
+                <h2 id="total"></h2>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+
+</html>
